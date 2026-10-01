@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Wrapper */
+.container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Base style for centering text in boxes */
+.header, .hero, .sidebar, .mc, .ec, .ri, .rp, .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 1.1rem;
+}
+
+/* Header */
+.header {
+  background-color: #4ed3ed;
+  height: 55px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Content Container */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Section 1: Left (Hero/Sidebar) + Right (Main/Extra) */
+.content1 {
+  display: flex;
+  gap: 12px;
+}
+
+/* Left Column */
+.c1left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 4; /* Takes ~40% width */
+}
+
+.hero {
+  background-color: #d1bce3;
+  height: 170px;
+}
+
+.sidebar {
+  background-color: #a3ca5c;
+  height: 250px;
+}
+
+/* Right Column */
+.c1right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 6; /* Takes ~60% width */
+}
+
+.mc {
+  background-color: #f1bf38;
+  height: 260px;
+}
+
+.ec {
+  background-color: #8c8a8c;
+  height: 160px;
+}
+
+/* Section 2: Related Images + Related Posts */
+.content2 {
+  display: flex;
+  gap: 12px;
+}
+
+.ri {
+  background-color: #27b173;
+  height: 110px;
+  flex: 7; /* Takes ~70% width */
+}
+
+.rp {
+  background-color: #f7c3d4;
+  height: 110px;
+  flex: 3; /* Takes ~30% width */
+}
+
+/* Footer */
+.footer {
+  background-color: #f8991d;
+  height: 55px;
+}
